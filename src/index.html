@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-</head>
-<body>
-<header class="hero">
-    <div class="container">
-        <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+    <link rel="stylesheet" href="./styles/main.scss" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC" />
         <p class="hero__text">
-            O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+          O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
         </p>
-    </div>
-</header>    
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização</b>
+              Allianz Parque - Barra Funda - São Paulo
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Preço</b>
+              A Partir de R$ 120,00
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Quando</b>
+              12/12/2022 às 19h
+            </li>
+          </ul>
+          <a href="#" class="button button--primary">Garanta sua vaga</a>
+        </div>
+      </div>
+    </header>
 
-<script src="./js/main.js"></script>
-</body>
+    <section class="event event--front-end">
+      <div class="container">
+        <div class="event__details">
+          <h2 class="event__details__title">Front-End</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
+            ipsum sed? Vel eligendi natus quam debitis in dolorem officia
+            deleniti iste fugit porro, consequuntur eaque officiis quos vitae,
+            velit commodi!
+          </p>
+        </div>
+        <img class="event__image" src="./images/frontend.png" alt="">
+      </div>
+    </section>
+    <section class="event event--back-end">
+      <div class="container">
+        <div class="event__details">
+          <h2 class="event__details__title">Front-End</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
+            ipsum sed? Vel eligendi natus quam debitis in dolorem officia
+            deleniti iste fugit porro, consequuntur eaque officiis quos vitae,
+            velit commodi!
+          </p>
+        </div>
+        <img class="event__image" src="./images/frontend.png" alt="">
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
