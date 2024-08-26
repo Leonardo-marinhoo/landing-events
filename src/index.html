@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="hero">
       <div class="container">
         <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC" />
         <p class="hero__text">
-          O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+          O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
         </p>
         <div class="infos-bar">
           <ul class="infos-bar__infos">
@@ -32,36 +33,70 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section  class="event">
+        <div data-aos="fade-right" data-aos-duration="1000"  class="container">
+          <div class="event__details">
+            <h2 class="event__details__title">Front-End</h2>
+            <p class="event__details__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deserunt, ipsum sed? Vel eligendi natus quam debitis in dolorem
+              officia deleniti iste fugit porro, consequuntur eaque officiis
+              quos vitae, velit commodi!
+            </p>
+          </div>
+          <img class="event__image" src="./images/frontend.png" alt="" />
+        </div>
+      </section>
+      <section  class="event event--image-left">
+        <div data-aos="fade-left" data-aos-duration="1000"  class="container">
+          <div class="event__details">
+            <h2 class="event__details__title">UX / UI</h2>
+            <p class="event__details__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deserunt, ipsum sed? Vel eligendi natus quam debitis in dolorem
+              officia deleniti iste fugit porro, consequuntur eaque officiis
+              quos vitae, velit commodi!
+            </p>
+          </div>
+          <img class="event__image" src="./images/ui-ux.png" alt="" />
+        </div>
+      </section>
+      <section class="event">
+        <div data-aos="fade-right" data-aos-duration="1000"  class="container">
+          <div class="event__details">
+            <h2 class="event__details__title">Data Science</h2>
+            <p class="event__details__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deserunt, ipsum sed? Vel eligendi natus quam debitis in dolorem
+              officia deleniti iste fugit porro, consequuntur eaque officiis
+              quos vitae, velit commodi!
+            </p>
+          </div>
+          <img class="event__image" src="./images/data.png" alt="" />
+        </div>
+      </section>
+      <section class="event event--image-left">
+        <div data-aos="fade-left" data-aos-duration="1000" class="container">
+          <div class="event__details">
+            <h2 class="event__details__title">Back-End</h2>
+            <p class="event__details__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Deserunt, ipsum sed? Vel eligendi natus quam debitis in dolorem
+              officia deleniti iste fugit porro, consequuntur eaque officiis
+              quos vitae, velit commodi!
+            </p>
+          </div>
+          <img class="event__image" src="./images/backend.png" alt="" />
+        </div>
+      </section>
 
-    <section class="event event--front-end">
-      <div class="container">
-        <div class="event__details">
-          <h2 class="event__details__title">Front-End</h2>
-          <p class="event__details__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-            ipsum sed? Vel eligendi natus quam debitis in dolorem officia
-            deleniti iste fugit porro, consequuntur eaque officiis quos vitae,
-            velit commodi!
-          </p>
-        </div>
-        <img class="event__image" src="./images/frontend.png" alt="">
-      </div>
-    </section>
-    <section class="event event--back-end">
-      <div class="container">
-        <div class="event__details">
-          <h2 class="event__details__title">Front-End</h2>
-          <p class="event__details__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-            ipsum sed? Vel eligendi natus quam debitis in dolorem officia
-            deleniti iste fugit porro, consequuntur eaque officiis quos vitae,
-            velit commodi!
-          </p>
-        </div>
-        <img class="event__image" src="./images/frontend.png" alt="">
-      </div>
-    </section>
+    </main>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
